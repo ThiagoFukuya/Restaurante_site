@@ -1,0 +1,219 @@
+/*Configurações Gerais do Site*/
+:root {
+    --preto: rgb(0, 0, 0);
+    --branco: rgb(255, 255, 255);
+    --cinza: rgb(221, 220, 220);
+    --verde: rgb(6, 184, 6);
+    --verde2: rgb(0, 255, 0);
+
+    --corprojeto1: rgb(172, 10, 10);
+    --corprojeto2: rgb(224, 16, 16);
+    --corprojeto3: rgb(151, 42, 42);
+    --corprojeto4: rgb(170, 170, 21);
+    --corprojeto5: rgb(247, 247, 7);
+    --corprojeto6: rgb(255, 136, 0);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+header {
+    background-color: var(--corprojeto1);
+    color: var(--branco);
+    padding: 1%;
+    position: fixed;
+    width: 100%;
+    margin: 0;
+}
+
+nav {
+    display: block;
+    text-align: center;
+    padding: 5px;
+    font-size: 1.3em;
+    word-spacing: 10px;
+    /*Espaçamento entre palavras*/
+}
+
+a {
+    text-decoration: none;
+    /*Remove o sublinhado*/
+    color: var(--branco);
+    font-weight: bold;
+    /*Deixa negrito*/
+}
+
+a:hover {
+    /*Efeito ao passar o mouse*/
+    color: yellow;
+}
+
+footer {
+    background-color: var(--preto);
+    color: var(--branco);
+    padding: 1%;
+    text-align: center;
+    font-size: bold;
+    /*Deixa negrito*/
+}
+
+body {
+    background-color: var(--cinza);
+}
+
+main {
+    background-color: var(--branco);
+    padding: 1%;
+    margin: auto;
+    width: 90%;
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px 0px
+}
+
+aside {
+    background-color: var(--branco);
+    padding: 1%;
+    margin: auto;
+    width: 90%;
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px 0px
+}
+
+/*Configuração de Titulos Headlines*/
+h1 {
+    font-size: 2em;
+    margin-top: 3%;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+h4 {
+    font-size: 1em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+}
+
+/*Configuração de imagens*/
+img {
+    width: 100%;
+    padding-top: 2%;
+}
+
+#topo {
+    width: 400px;
+    height: 130px;
+    display: block;
+    margin: auto;
+}
+
+@media(min-width:320px) and (max-width: 1024px) {
+
+    #topo {
+    width: 340px;
+    height: 100px;
+    display: block;
+    margin: auto;
+}
+}
+
+
+/*Configuração de Parágrafos*/
+p {
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+}
+
+/*Configuração de Paragrafos para dispositivos móveis*/
+@media (min-width: 320px) and (max-width: 1024px) {
+    p {
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+}
+
+/*Divs*/
+.separador {
+    margin-top: 10%;
+}
+
+.separador-conteudo {
+    margin-top: 0.5%;
+}
+
+/*Configuração de Divs para dispositivos móveis*/
+@media (min-width: 320px) and (max-width: 1024px) {
+    .separador {
+        margin-top: 19%;
+    }
+
+    .separador-conteudo {
+        margin-top: 1%;
+    }
+}
+
+/*
+#nomeid
+.nomeclasse
+*/
+/*Configurações de grade de conteúdo - Grids*/
+#grid-conteudo {
+    background-color: var(--cinza);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    max-width: 1024px;
+    margin: auto;
+    gap: 1px;
+}
+
+.grid div {
+    background-color: var(--branco);
+    text-align: center;
+    padding: 2px;
+}
+
+/*Configurações p/ Botão de Ação*/
+button {
+    padding: 8px 20px 8px 20px;
+    /*padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 20px;
+    padding-right: 20px;*/
+    background-color: var(--verde);
+    color: var(--branco);
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1.3em;
+    display: block;
+    margin: auto;
+    transition: 0.4s ease;
+}
+
+button:hover {
+    background: var(--verde2);
+    color: var(--preto);
+}
