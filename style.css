@@ -28,7 +28,6 @@ html {
 header {
     background-color: var(--corprojeto1);
     color: var(--branco);
-    padding: 1%;
     position: fixed;
     width: 100%;
     margin: 0;
@@ -91,10 +90,13 @@ aside {
 h1 {
     font-size: 2em;
     margin-top: 3%;
+    text-align: center;
+    color: var(--corprojeto1);
 }
 
 h2 {
     font-size: 1.5em;
+    color: var(--corprojeto1);
 }
 
 h3 {
@@ -165,7 +167,7 @@ p {
 /*Configuração de Divs para dispositivos móveis*/
 @media (min-width: 320px) and (max-width: 1024px) {
     .separador {
-        margin-top: 19%;
+        margin-top: 33%;
     }
 
     .separador-conteudo {
