@@ -86,6 +86,16 @@ aside {
     box-shadow: 1px 1px 5px 0px
 }
 
+/*Configuração de Links de Produtos*/
+.menu {
+    color: var(--branco);
+    background-color: var(--corprojeto1);
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px var(--corprojeto6);
+    font-size: 1.5em;
+}
+
 /*Configuração de Titulos Headlines*/
 h1 {
     font-size: 2em;
