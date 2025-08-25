@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
 /*Configurações Gerais do Site*/
 :root {
     --preto: rgb(0, 0, 0);
@@ -46,8 +48,7 @@ a {
     text-decoration: none;
     /*Remove o sublinhado*/
     color: var(--branco);
-    font-weight: bold;
-    /*Deixa negrito*/
+    font-weight: bold; /*Deixa negrito*/
 }
 
 a:hover {
@@ -56,12 +57,10 @@ a:hover {
 }
 
 footer {
-    background-color: var(--preto);
+    background-color: var(--corprojeto1);
     color: var(--branco);
-    padding: 1%;
     text-align: center;
-    font-size: bold;
-    /*Deixa negrito*/
+    font-size: bold;  /*Deixa negrito*/
 }
 
 body {
@@ -98,15 +97,21 @@ aside {
 
 /*Configuração de Titulos Headlines*/
 h1 {
-    font-size: 2em;
-    margin-top: 3%;
+    font-size: 3.5em;
+    margin-top: 1%;
     text-align: center;
     color: var(--corprojeto1);
+    font-family: "Kaushan Script", cursive;
+    text-shadow: 1px 1px 1px var(--corprojeto6);
 }
 
 h2 {
-    font-size: 1.5em;
+    font-size: 2.5em;
     color: var(--corprojeto1);
+    text-align: center;
+    text-shadow: 1px 1px 1px 2px var(--corprojeto6);
+    font-family: "Kaushan Script", cursive;
+    text-shadow: 1px 1px 1px var(--corprojeto6);
 }
 
 h3 {
@@ -150,6 +155,24 @@ img {
 }
 }
 
+/*Img Rodape*/
+
+#rodape {
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: auto;
+}
+
+@media(min-width:320px) and (max-width: 1024px) {
+
+    #rodape {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: auto;
+}
+}
 
 /*Configuração de Parágrafos*/
 p {
@@ -190,8 +213,9 @@ p {
 .nomeclasse
 */
 /*Configurações de grade de conteúdo - Grids*/
-#grid-conteudo {
-    background-color: var(--cinza);
+.grid-conteudo {
+    background-color: var(--branco);
+    padding: 0.5%;
 }
 
 .grid {
@@ -199,13 +223,15 @@ p {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     max-width: 1024px;
     margin: auto;
-    gap: 1px;
+    gap: 8px;
 }
 
 .grid div {
     background-color: var(--branco);
     text-align: center;
     padding: 2px;
+    box-shadow: 1px 1px 1px 2px var(--corprojeto6);
+    border-radius: 20px;
 }
 
 /*Configurações p/ Botão de Ação*/
