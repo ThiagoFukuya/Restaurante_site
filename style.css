@@ -28,7 +28,7 @@ html {
 }
 
 header {
-    background-color: var(--corprojeto1);
+    background: linear-gradient(var(--corprojeto6), var(--corprojeto1), var(--corprojeto1), var(--corprojeto1));
     color: var(--branco);
     position: fixed;
     width: 100%;
@@ -57,7 +57,7 @@ a:hover {
 }
 
 footer {
-    background-color: var(--corprojeto1);
+    background: linear-gradient(var(--corprojeto1), var(--corprojeto1), var(--corprojeto1), var(--corprojeto1), var(--corprojeto6));
     color: var(--branco);
     text-align: center;
     font-size: bold;  /*Deixa negrito*/
@@ -109,9 +109,28 @@ h2 {
     font-size: 2.5em;
     color: var(--corprojeto1);
     text-align: center;
-    text-shadow: 1px 1px 1px 2px var(--corprojeto6);
+    text-shadow: 1px 1px 1px 2px var(--corprojeto6);    
+    font-style: italic;
+}
+
+/*Configurações de Titulos p/ celulares*/
+@media(min-width:320px) and (max-width:1024px){
+    h1 {
+    font-size: 2.5em;
+    margin-top: 1%;
+    text-align: center;
+    color: var(--corprojeto1);
     font-family: "Kaushan Script", cursive;
     text-shadow: 1px 1px 1px var(--corprojeto6);
+    font-style: italic;
+}
+
+h2 {
+    font-size: 2em;
+    color: var(--corprojeto1);
+    text-align: center;
+    text-shadow: 1px 1px 1px 2px var(--corprojeto6);
+}
 }
 
 h3 {
