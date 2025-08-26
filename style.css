@@ -215,6 +215,9 @@ p {
 .separador-conteudo {
     margin-top: 0.5%;
 }
+.separador-conteudo-sobremesas {
+    margin-top: 11%;
+}
 
 /*Configuração de Divs para dispositivos móveis*/
 @media (min-width: 320px) and (max-width: 1024px) {
